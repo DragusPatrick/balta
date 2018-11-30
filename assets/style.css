@@ -1,0 +1,496 @@
+/*body {
+    height: 100%;
+    background: #a7ffba;
+}
+.login {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 7%;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.login input {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+.step {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+}
+.step-body {
+    padding: 10px 15px;
+    min-height: 150px;
+}
+.step-footer {
+    margin-top: 10px;
+    padding: 10px 0;
+}
+.step-footer button, .step-footer .btn-primary {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+#tableReserve {
+    width: 100%;
+    text-align: left;
+}
+#tableReserve ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#tableReserve ul .btn {
+    float: right;
+}
+#tableReserve ul li {
+    min-height: 60px;
+    padding: 10px;
+    font-size: 26px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 50px;
+
+}
+#tableReserve ul li:hover {
+    background-color: #fceaea;
+}
+#step3 {
+    max-width: 900px;
+
+}
+.btn-rezerva {
+    width: 100%;
+}
+.spot-details p {
+    font-size: 14px;
+}
+.spot-details p.disponibil strong {
+    color: green;
+}
+.spot-details p.indisponibil strong {
+    color: red;
+}
+.twoBtn {
+    width: 49%;
+    margin-right: 1%;
+}
+.disable {
+    display: none !important;
+}*/
+
+/* styles by R?ducu */
+
+body, .login{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+body {
+    background: #fff;
+}
+.solacolu{
+    background: #344a71!important;
+}
+/*- helpers -*/
+.no-margin{
+    margin: 0 !important;
+}
+.no-padding{
+    padding: 0!important;
+}
+
+/*- login page -*/
+.login{
+    background-image: url(../assets/images/login-register.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10vh 0 0 0;
+}
+.login .container{
+    max-width: 370px;
+}
+.login .container .card{
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+.login .card .card-content{
+    padding: 0 10px;
+}
+.input-field input[type=date]:focus + label,
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+    color: #e91e63;
+}
+
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+    border-bottom: 2px solid #e91e63;
+    box-shadow: none;
+}
+.top-actions p{
+    color: #ffffff;
+    margin: 0;
+}
+/*- alerts -*/
+#card-alert{
+    padding: 10px;
+}
+#card-alert i {
+    font-size: 20px;
+    position: relative;
+    top: 2px
+}
+#card-alert .alert-circle {
+    display: inline-block;
+    width: 40px;
+    white-space: nowrap;
+    border-radius: 1000px;
+    vertical-align: bottom;
+    position: relative;
+    top: -5px;
+    left: -2px
+}
+#card-alert .single-alert {
+    line-height: 42px
+}
+#card-alert button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff
+}
+#card-alert .card .card-content {
+    padding: 20px 40px 20px 20px
+}
+#card-alert .card-action i {
+    top: 0;
+    margin: 0
+}
+/*- collapsible -*/
+.collapsible li i {
+    position: relative; top: -45px; height: 0; right: 0px;
+    margin: 0;
+}
+.collapsible li.active i {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+    position: initial;
+    margin: 0;
+}
+.rezervare .collection .collection-item.avatar{
+    padding-left: 100px;
+}
+.rezervare .collection.days .collection-item.avatar .title{
+    padding: 10px 0 5px 0;
+    display: block;
+}
+.rezervare .collection .collection-item.avatar .circle {
+    width: 80px;
+    height: 80px;
+    left: 5px;
+    top: 0px;
+}
+.collapsible.locuri-cazare{
+    width: calc(100% - 20px);
+    margin: 10px auto;
+}
+.collapsible-body p{
+    padding: 0 0 10px 0;
+}
+.collapsible-body{
+    padding: 20px;
+}
+.collection-header h4{
+    margin: 10px 0;
+}
+.collection.with-header .collection-item{
+    padding-left: 10px;
+}
+.collection .collection-item{
+    padding: 10px;
+    line-height: normal; 
+}
+.collection .collection-item [type="checkbox"]+label {
+    padding-left: 30px;
+    height: auto;
+    line-height: normal;
+}
+.collection .collection-item [type="checkbox"]+label .secondary-content{
+    position: relative;
+    top: 2px;
+}
+ul.day {
+    width: 140px;
+    float: left;
+    border-right: 1px solid #e0e0e0!important;
+    border-bottom: 1px solid #e0e0e0!important;
+}
+ul.day .collection-header p,
+ul.days .collection-header p{
+    color: white;
+    line-height: normal;
+    padding: 5px 10px;
+    text-align: center;
+}
+/*- rezervare -*/
+.rezervare{
+    margin: 5vh auto;
+    max-width: 860px;
+}
+.rezervare h4{
+    margin-bottom: 5vh;
+}
+.rezervare .dateField.input-field.col .prefix ~ label,
+.rezervare .dateField.input-field.col .prefix ~ .validate ~ label{
+    pointer-events: none;
+}
+.rezervare .radioField [type="radio"]:not(:checked)+label,
+.rezervare .radioField [type="radio"]:checked+label{
+    top: 0;
+}
+/*- spinner -*/
+.spinner{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255,255,255,1);
+    z-index: 990;
+    text-align: center;
+    vertical-align: middle;
+}
+.spinner img{
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: grayscale(1);
+    box-shaddow: 0 0 10px;
+}
+.indisponibil label:before{
+    display: none;
+}
+.indisponibil .secondary-content{
+    color:red;
+}
+/*- modal -*/
+#modal-must-login{
+    width: 340px;
+    max-height: 100%;
+    height: 190px;
+}
+#modal-must-login .modal-footer .btn{
+    width: calc(50% - 5px);
+    float: left;
+    padding: 0 10px;
+}
+/*- invoice -*/
+
+.invoice-table table td{
+    vertical-align: top;
+}
+.invoice-table table td ul{
+    margin: 0;
+}
+.notLoggedIn [type="checkbox"]+label:before,
+.notLoggedIn [type="checkbox"]:not(.filled-in)+label:after{
+    border-radius: 50%;
+    border-color: green;
+    background-color: green;
+    pointer-events: none;
+}
+.group-pachete{
+    padding-top: 15px!important;
+    margin-top: 10px;
+    border-top: 1px solid #e2d4d4;
+}
+/* pagination */
+.dataTables_paginate span{
+
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    border: none;
+    min-width: 40px!important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    background: #344a71!important;
+    color: #fff!important;
+    border: none!important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+    background: #344a71!important;
+    color: #fff!important;
+    border: none!important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:before,
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:after{
+    border-right: 2px solid;
+    content: '';
+    display: block;
+    height: 8px;
+    margin-top: -6px;
+    position: absolute;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 19px;
+    top: 50%;
+    width: 0;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous:after {
+    margin-top: -1px;
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:before,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:after{
+    border-right: 2px solid;
+    content: '';
+    display: block;
+    height: 8px;
+    margin-top: -6px;
+    position: absolute;
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    right: 19px;
+    top: 50%;
+    width: 0;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:after {
+    margin-top: -1px;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next{
+    position: relative;
+    padding: 19px 18px;
+    text-align: center;
+    top: 14px;
+    margin: 0 auto;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active{
+    border: none;
+    background: none!important;
+}
+/* admin table */
+.btn.actions {
+    max-width: 30px;
+    padding: 0 10px;
+    margin: 0 10px 0 0;
+}
+.panel-heading,
+#rezervari-list_length{
+    display: none;
+}
+.dataTables_filter{
+    float: none!important;
+    max-width: 80%!important;
+    margin: 30px auto 10px auto!important;
+    position: relative;
+    height: 40px;
+}
+.dataTables_filter label{
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    font-size: 0.8rem;
+    cursor: text;
+    transition: .2s ease-out;
+    width: 100%;
+    line-height: 1rem;
+}
+.dataTables_filter label input{
+    position: relative;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0!important;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    top: -1rem;
+    line-height: 1rem;
+}
+.dataTables_wrapper .dataTables_filter{
+    text-align: left;
+}
+.popup-basic.admin-form{
+    padding: 25px;
+    border-radius: 4px;
+}
+
+.dataTable .btn{
+	padding:0 1rem!important;
+	margin-right:5px;
+}
+.dataTable .remove.btn{
+	background:#d03e3e;
+}
+
+.dataTable .remove.btn:hover{
+	background: #bd0707;
+}
+
+
+.modal.fade{
+    display: block;
+    top:20%;
+}
+
+
+.picker__day[data-pick="1506200400000"], .picker__day[data-pick="1506027600000"], .picker__day[data-pick="1506114000000"]{
+    background: #ff2a34!important;
+    color: #fff!important;
+}
+
+
+
+.picker__day[data-pick="1507064400000"], .picker__day[data-pick="1507150800000"], .picker__day[data-pick="1507237200000"], .picker__day[data-pick="1507323600000"], .picker__day[data-pick="1507410000000"] {
+    background: #ff2a34!important;
+    color: #fff!important;
+}
+
+.picker__day--disabled{
+    background: #f7d7d7!important;
+    color:#000!important;
+}
